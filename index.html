@@ -1,0 +1,92 @@
+><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+  <style>
+  body{
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(sky.jpg);
+      background-size:cover;
+      width:100%;
+      height:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:fixed;
+  }
+
+form{
+    margin-left:20px;
+    margin-top:10px;
+}
+.formstyle{
+    padding:10px;
+    width:190px;
+    height:300px;
+    margin:auto;
+    position:absolute;
+    top:40%;
+    left:40%;
+    background-color:rgb(55, 4, 236);
+}
+
+#input{
+    width:150px;
+    background-color:wheat;
+    border:none;
+    padding:5px;
+    box-sizing:border-box;
+    }
+
+input{
+    width:46px;
+    background-color: chartreuse;
+}
+  #clear{
+      width:150px;
+  }
+  h1{
+      color:chocolate;
+      text-align: center;
+  }
+  a{
+      color:white;
+      text-decoration:none;
+      margin:10px;
+  }
+
+  </style>
+</head>
+<body>
+    <h1> Create Simple Calculator With The Help of  java script, css and html</h1>
+    <div class="formstyle">
+    <form name="forms">
+        <input type="text" name="Answer" id="input"><br><br>
+
+        <input type="button" value="1" onclick="forms.Answer.value += '1' ">
+        <input type="button" value="2" onclick="forms.Answer.value += '2' ">
+        <input type="button" value="3" onclick="forms.Answer.value += '3' ">
+        <br><br>
+        <input type="button" value="4" onclick="forms.Answer.value += '4' ">
+        <input type="button" value="5" onclick="forms.Answer.value += '5' ">
+        <input type="button" value="6" onclick="forms.Answer.value += '6' ">
+        <br><br>
+        <input type="button" value="7" onclick="forms.Answer.value += '7' ">
+        <input type="button" value="8" onclick="forms.Answer.value += '8' ">
+        <input type="button" value="9" onclick="forms.Answer.value += '9' ">
+        <br><br>
+        <input type="button" value="+" onclick="forms.Answer.value += '+' ">
+        <input type="button" value="-" onclick="forms.Answer.value += '-' ">
+        <input type="button" value="*" onclick="forms.Answer.value += '*' ">
+        <br><br>
+        <input type="button" value="/" onclick="forms.Answer.value += '/' ">
+        <input type="button" value="0" onclick="forms.Answer.value += '0' ">
+        <input type="button" value="=" onclick="forms.Answer.value = eval(forms.Answer.value) "> 
+        <br><br>
+        <input type="button" value="Clear All" onclick="forms.Answer.value =''" id="clear"> 
+        <a href="https://www.facebook.com/ashish.kohli.7524879" > Ashish kohli Profile</a>
+    </form>
+</div>
+</body>
+</html>
